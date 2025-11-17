@@ -102,6 +102,10 @@ The number of characters in the source code that contains the actual logic for e
 
 What constitutes an award beyond just a title/recognition by peers is TBD in discussion with leadership.
 
+> Can I make multiple submissions to try and win multiple awards?
+
+No. Please target one approach per challenge week, whichever interests you most for the given challenge.
+
 > Can I use AI for my submission?
 
 AI can be used to discover language features or look for refinements in syntax, but relying on an LLM for the algorithm itself defeats the purpose of the challenge; please, don't. For best practice, please include the following context to the model when asking questions:
