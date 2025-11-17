@@ -6,6 +6,7 @@ const POINTS_TRY = 5;
 const POINTS_CONVERSION = 7;
 const SCORES = [_]u64{ 0, 1, 2, 3, 4, 5, 7, 9, 10, 12, 15, 25, 50, 100 };
 
+// TODO: Make this accept a score as an arg instead.
 pub fn main() !void {
     var arena = std.heap.ArenaAllocator.init(std.heap.page_allocator);
     defer arena.deinit();
@@ -24,17 +25,11 @@ fn findRoutes(allocator: std.mem.Allocator, score: u64) !u64 {
     var routes_cache = try allocator.alloc(u64, limit);
     defer allocator.free(routes_cache);
 
-    routes_cache[0] = 1;
-    routes_cache[1] = 0;
-    routes_cache[2] = 0;
-    routes_cache[3] = 1;
-    routes_cache[4] = 0;
-    routes_cache[5] = 1;
-    routes_cache[6] = 0;
-    routes_cache[7] = 1;
+    // NOTE: By allocating the results for scores 0-7, we avoid the need for
+    // if statements on every iteration.
+    @memcpy(routes_cache[0..8], &[_]u64{ 1, 0, 0, 1, 0, 1, 0, 1 });
 
     for (8..limit) |idx| {
-        // NOTE: No need to check for bounds-checking due to guards above.
         routes_cache[idx] = routes_cache[idx - POINTS_PENALTY];
         routes_cache[idx] += routes_cache[idx - POINTS_TRY];
         routes_cache[idx] += routes_cache[idx - POINTS_CONVERSION];
