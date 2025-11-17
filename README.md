@@ -30,7 +30,7 @@ The structure of challenge week is as follows:
 
 *Duration: 15 minutes*
 
-Get familiar with the problem
+The primary adjudicator will welcome everyone, introduce the concept of challenge week and the problem for the current challenge week. Any questions can be answered by either the primary or secondary adjudicator. At the adjudicators' discretion, their may be a brief icebreaker if many of the participants are unfamiliar with eachother.
 
 The adjudicators will place programmers into pairs. Ideally, these pairs allow programmers of different experience levels or familiarity with the kind of problem at hand to work together. If necessary, the adjudicators may participate as half of a pair; they are not to provide direct solutions, but may give guidance or feedback on the other programmer's thoughts and code. One arrangement that works well is for the adjudicator to be the typist, and the other programmer dictate the solution to them. In the event that the participant count is uneven, a group of 3 may be created.
 
