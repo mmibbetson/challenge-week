@@ -4,7 +4,8 @@ const rugby = @import("rugby");
 const POINTS_PENALTY = 3;
 const POINTS_TRY = 5;
 const POINTS_CONVERSION = 7;
-const SCORES = [_]u64{ 0, 1, 2, 3, 4, 5, 7, 9, 10, 12, 15, 25, 50, 100 };
+const SCORES = [_]u64{ 100, 150, 195 };
+const PREALLOCATED_SCORES = [_]u64{ 1, 0, 0, 1, 0, 1, 1, 1 };
 
 // TODO: Make this accept a score as an arg instead.
 pub fn main() !void {
@@ -18,16 +19,13 @@ pub fn main() !void {
 }
 
 fn findRoutes(allocator: std.mem.Allocator, score: u64) !u64 {
-    if (score == 0) return 1;
-    if (score == 1 or score == 2) return 0;
+    if (score < PREALLOCATED_SCORES.len) return PREALLOCATED_SCORES[score];
 
     const limit = score + 1;
     var routes_cache = try allocator.alloc(u64, limit);
     defer allocator.free(routes_cache);
 
-    // NOTE: By allocating the results for scores 0-7, we avoid the need for
-    // if statements on every iteration.
-    @memcpy(routes_cache[0..8], &[_]u64{ 1, 0, 0, 1, 0, 1, 0, 1 });
+    @memcpy(routes_cache[0..8], &PREALLOCATED_SCORES);
 
     for (8..limit) |idx| {
         routes_cache[idx] = routes_cache[idx - POINTS_PENALTY];
