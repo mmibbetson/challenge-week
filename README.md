@@ -86,6 +86,10 @@ This is at the discretion of the adjudicators for the given challenge week. Some
 
 While it's ideal that programmers of varying skill levels and experience can participate in any challenge week, a given problem can be made to be significantly harder or easier at the discretion of the adjudicators if it serves an educational or novel purpose.
 
+> How is a "correct" solution determined?
+
+The acceptance criteria for a solution will be determined by the primary and secondary adjudicators, and clearly noted in the challenge week's `README.md`. They will also be expressed at the kickoff event.
+
 > How is performance benchmarking conducted?
 
 A specific benchmark process will be determined for each challenge week which will be made known in the `README.md` for that week.
