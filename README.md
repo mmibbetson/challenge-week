@@ -90,6 +90,10 @@ While it's ideal that programmers of varying skill levels and experience can par
 
 A specific benchmark process will be determined for each challenge week which will be made known in the `README.md` for that week.
 
+> How is the golfer award's size determined?
+
+The number of characters in the source code that contains the actual logic for executing the solution is used. Tests (even in-source-file tests) are disregarded for this count.
+
 > What are the actual awards?
 
 What constitutes an award beyond just a title/recognition by peers is TBD in discussion with leadership.
