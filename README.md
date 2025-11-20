@@ -4,17 +4,17 @@ Challenge Week is a Friday-to-Friday period, kicking off with an afternoon group
 
 ## Project Leadership
 
-There are 3 designated organisers & arbitrators for the event, with varying levels of involvement. The intent behind this structure is to minimise the time required by senior resources, while still providing a support structure to the primary organiser and preventing decision impasses. All three arbitrators are expected to understand the problem well, and be familiar with the possible approaches to solving it.
+There are 3 designated organisers & judges for the event, with varying levels of involvement. The intent behind this structure is to minimise the time required by senior resources, while still providing a support structure to the primary organiser and preventing decision impasses. All three judges are expected to understand the problem well, and be familiar with the possible approaches to solving it.
 
-### Primary Arbitrator
+### Primary Judge
 
 Serves as the primary event organiser, problem designer, and judge for solution submissions. This person is expected to perform all possible organisational duties within their power, requesting assistance from external operational resources where necessary.
 
-### Secondary Arbitrator
+### Secondary Judge
 
 Serves as a secondary problem designer and an equal judge for solution submissions. This person is not expected to perform organisational duties, but is required to be present at the kickoff event.
 
-### Tertiary Arbitrator
+### Tertiary Judge
 
 Serves as a tie-breaker for any organisational or judging decisions which require one. This person need only have minimal participation in the event that is required, and need not be present for the kickoff event.
 
@@ -30,9 +30,9 @@ The structure of challenge week is as follows:
 
 *Duration: 15 minutes*
 
-The primary adjudicator will welcome everyone, introduce the concept of challenge week and the problem for the current challenge week. Any questions can be answered by either the primary or secondary adjudicator. At the adjudicators' discretion, their may be a brief icebreaker if many of the participants are unfamiliar with eachother.
+The primary judge will welcome everyone, introduce the concept of challenge week and the problem for the current challenge week. Any questions can be answered by either the primary or secondary judge. At the judges' discretion, their may be a brief icebreaker if many of the participants are unfamiliar with eachother.
 
-The adjudicators will place programmers into pairs. Ideally, these pairs allow programmers of different experience levels or familiarity with the kind of problem at hand to work together. If necessary, the adjudicators may participate as half of a pair; they are not to provide direct solutions, but may give guidance or feedback on the other programmer's thoughts and code. One arrangement that works well is for the adjudicator to be the typist, and the other programmer dictate the solution to them. In the event that the participant count is uneven, a group of 3 may be created.
+The judges will place programmers into pairs. Ideally, these pairs allow programmers of different experience levels or familiarity with the kind of problem at hand to work together. If necessary, the judges may participate as half of a pair; they are not to provide direct solutions, but may give guidance or feedback on the other programmer's thoughts and code. One arrangement that works well is for the judge to be the typist, and the other programmer dictate the solution to them. In the event that the participant count is uneven, a group of 3 may be created.
 
 #### Challenge Round 1
 
@@ -44,7 +44,7 @@ The pairs will have time to attempt to find a working solution to the problem la
 
 *Duration: 15 minutes*
 
-Refreshments will be provided for an interim break period. In this time pairs are welcome to discuss their previous approaches with each other if they'd like. Toward the end of this time, the adjudicators will form new pairs for the next round.
+Refreshments will be provided for an interim break period. In this time pairs are welcome to discuss their previous approaches with each other if they'd like. Toward the end of this time, the judges will form new pairs for the next round.
 
 #### Challenge Round 2
 
@@ -62,9 +62,9 @@ A short time will be taken to display working or in-progress solutions for those
 
 *Duration: 1 week*
 
-In their own time over the next week, individuals (even those who were unable to participate in the kickoff event) can work on a final solution to the problem. The directory for the given week should contain all relevant information regarding the problem itself, but if clarification or further detail is needed, submitters can contact the primary adjudicator.
+In their own time over the next week, individuals (even those who were unable to participate in the kickoff event) can work on a final solution to the problem. The directory for the given week should contain all relevant information regarding the problem itself, but if clarification or further detail is needed, submitters can contact the primary judge.
 
-To make a submission, fork the repository, add a new directory within the year that you're submitting with your name, and use that directory to keep the source code and any docs for your solution. So, for example, if "Sam" were to submit a solution for the challenge week of 17 November 2025, they'd fork the repository, and in the `20251117/` directory (which will already have been created by the primary adjudicator), they'd create a directory called `sam/` (submitters can use whatever their preferred name is, so long as it doesn't conflict with another submitter's directory name). Sam would write a `README.md` in their directory for any additional information pertaining to the solution, such as instructions for building, testing, or running it. They would then create a pull request back into the upstream repository for your code to be reviewed.
+To make a submission, fork the repository, add a new directory within the year that you're submitting with your name, and use that directory to keep the source code and any docs for your solution. So, for example, if "Sam" were to submit a solution for the challenge week of 17 November 2025, they'd fork the repository, and in the `20251117/` directory (which will already have been created by the primary judge), they'd create a directory called `sam/` (submitters can use whatever their preferred name is, so long as it doesn't conflict with another submitter's directory name). Sam would write a `README.md` in their directory for any additional information pertaining to the solution, such as instructions for building, testing, or running it. They would then create a pull request back into the upstream repository for your code to be reviewed.
 
 ## Awards
 
@@ -80,15 +80,15 @@ The awards will be determined over the week following challenge week, and announ
 
 > What programming language(s) can I use?
 
-This is at the discretion of the adjudicators for the given challenge week. Some problems may necessitate a specific language or subset of languages. Others may be completely open-ended. Where possible, adjudicators should permit more languages rather than fewer where feasible for the problem at hand, as it is an explicit goal of this challenge to provide a fun and experimental environment to write code.
+This is at the discretion of the judges for the given challenge week. Some problems may necessitate a specific language or subset of languages. Others may be completely open-ended. Where possible, judges should permit more languages rather than fewer where feasible for the problem at hand, as it is an explicit goal of this challenge to provide a fun and experimental environment to write code.
 
 > How difficult are the problems?
 
-While it's ideal that programmers of varying skill levels and experience can participate in any challenge week, a given problem can be made to be significantly harder or easier at the discretion of the adjudicators if it serves an educational or novel purpose.
+While it's ideal that programmers of varying skill levels and experience can participate in any challenge week, a given problem can be made to be significantly harder or easier at the discretion of the judges if it serves an educational or novel purpose.
 
 > How is a "correct" solution determined?
 
-The acceptance criteria for a solution will be determined by the primary and secondary adjudicators, and clearly noted in the challenge week's `README.md`. They will also be expressed at the kickoff event.
+The acceptance criteria for a solution will be determined by the primary and secondary judges, and clearly noted in the challenge week's `README.md`. They will also be expressed at the kickoff event.
 
 > How is performance benchmarking conducted?
 
