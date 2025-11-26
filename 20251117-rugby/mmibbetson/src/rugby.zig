@@ -1,28 +1,42 @@
 const std = @import("std");
 const rugby = @import("rugby");
 
-const POINTS_PENALTY = 3;
-const POINTS_TRY = 5;
-const POINTS_CONVERSION = 7;
-const PREALLOCATED_SCORES = [_]u64{ 1, 0, 0, 1, 0, 1, 1, 1 };
+const POINT_VALUES = [_]u64{ 3, 5, 7 };
+const ROUTES_KNOWN = comptime blk: {
+    var max: u64 = 0;
+    for (POINT_VALUES) |pv| {
+        if (pv > max) max = pv;
+    }
+
+    var routes = [_]u64{0} ** (max + 1);
+    routes[0] = 1;
+
+    for (POINT_VALUES) |pv| {
+        routes[pv] = 1;
+    }
+
+    break :blk routes;
+};
 
 pub fn findRoutes(allocator: std.mem.Allocator, score: u64) !u64 {
-    if (score < PREALLOCATED_SCORES.len) return PREALLOCATED_SCORES[score];
+    const rk_ubound = ROUTES_KNOWN.len;
+    if (score < rk_ubound) return ROUTES_KNOWN[score];
 
-    const limit = score + 1;
-    var routes_cache = try allocator.alloc(u64, limit);
+    const score_ubound = score + 1;
+    var routes_cache = try allocator.alloc(u64, score_ubound);
     defer allocator.free(routes_cache);
 
-    @memcpy(routes_cache[0..8], &PREALLOCATED_SCORES);
+    @memcpy(routes_cache[0..rk_ubound], &ROUTES_KNOWN);
 
-    for (8..limit) |idx| {
-        routes_cache[idx] = routes_cache[idx - POINTS_PENALTY];
-        routes_cache[idx] += routes_cache[idx - POINTS_TRY];
-        routes_cache[idx] += routes_cache[idx - POINTS_CONVERSION];
+    for (rk_ubound..score_ubound) |idx| {
+        for (POINT_VALUES) |pv| {
+            routes_cache[idx] += routes_cache[idx - pv];
+        }
     }
 
     return routes_cache[score];
 }
+
 
 const testing = std.testing;
 test "one route to 0" {
