@@ -1,6 +1,6 @@
 # Challenge Week
 
-A *"Challenge Week"* is a Friday-to-Friday period, kicking off with an afternoon group event that sets a problem before a group of programmers and sees them working in pairs to solve it within a given time limit. The primary purpose of this event is to encourage people to tackle a novel problem with a partner that they may not have worked with before, or may not have worked with in a pair-programming context specifically. After the kickoff event, the remaining week gives time for individuals to create specialised solutions for the problem in friendly competition for a small set of awards.
+A *"Challenge Week"* is a Friday-to-Friday period, kicking off with an afternoon group event that sets a problem before a group of programmers and sees them working in pairs to solve it within a given time limit. The primary purpose of this event is to encourage people to tackle a novel problem with a partner that they may not have worked with before, or may not have worked with in a pair-programming context specifically. After the kickoff event, the remaining week gives time for individuals to create specialised solutions for the problem in friendly competition for a small award.
 
 ## Project Leadership
 
@@ -68,13 +68,16 @@ To make a submission, fork the repository, add a new directory within the year t
 
 ## Awards
 
-The individual submissions will be judged by a few different metrics, so submitters can lean into the criterion that interests them most. The awards are:
+The goal of a given challenge is primarily to create a working solution that fulfills the acceptance criteria. At the end of the week, there will also be special recognition for the solution that fulfills an extra criterion. Which of these the judges choose to judge based on
 
-- **The Hacker**: The working solution with the fastest performance benchmark.
-- **The Golfer**: The working solution with the fewest characters.
-- **The Poet**: The working solution with the most beautiful source code.
+- Performance (Speed)
+- Performance (Memory)
+- Beauty/Aesthetic
+- Code Golf
+- Weirdest Language
+- Weirdest Solution
 
-The awards will be determined over the week following challenge week, and announced that Friday (i.e. 2 weeks after the kickoff event and 1 week after the close of individual submissions).
+The winner will be determined over the week following challenge week, and announced that Friday (i.e. 2 weeks after the kickoff event and 1 week after the close of individual submissions).
 
 ## FAQ
 
@@ -93,10 +96,6 @@ The acceptance criteria for a solution will be determined by the primary and sec
 > How is performance benchmarking conducted?
 
 A specific benchmark process will be determined for each challenge week which will be made known in the `README.md` for that week.
-
-> How is the golfer award's size determined?
-
-The number of characters in the source code that contains the actual logic for executing the solution is used. Tests (even in-source-file tests) are disregarded for this count.
 
 > What are the actual awards?
 
